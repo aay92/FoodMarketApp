@@ -1,8 +1,13 @@
-//
-//  ProfileCoordinator.swift
-//  FoodMarketApp
-//
-//  Created by Aleksey Alyonin on 09.04.2024.
-//
+import UIKit
 
-import Foundation
+class ProfileCoordinator: Coordinator {
+    override func start() {
+       let vc = ViewController()
+        vc.view.backgroundColor = .yellow
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func finish() {
+        print("appCoordinator finish")
+    }
+}

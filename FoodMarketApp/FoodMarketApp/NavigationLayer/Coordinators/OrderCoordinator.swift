@@ -1,8 +1,13 @@
-//
-//  OrderCoordinator.swift
-//  FoodMarketApp
-//
-//  Created by Aleksey Alyonin on 09.04.2024.
-//
+import UIKit
 
-import Foundation
+class OrderCoordinator: Coordinator {
+    override func start() {
+       let vc = ViewController()
+        vc.view.backgroundColor = .green
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func finish() {
+        print("appCoordinator finish")
+    }
+}
