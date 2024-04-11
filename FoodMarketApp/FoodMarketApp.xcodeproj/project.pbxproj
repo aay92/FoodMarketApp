@@ -38,6 +38,7 @@
 		5BC0A0982BC5AB7C00413F14 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC0A0972BC5AB7C00413F14 /* TabBarController.swift */; };
 		5BDD6AB12BC7122A0017EA86 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD6AB02BC7122A0017EA86 /* OnboardingViewController.swift */; };
 		5BDD6AB32BC7129A0017EA86 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD6AB22BC7129A0017EA86 /* OnboardingViewPresenter.swift */; };
+		5BDD6AB52BC85ECA0017EA86 /* OnBoardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD6AB42BC85ECA0017EA86 /* OnBoardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		5BC0A0972BC5AB7C00413F14 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5BDD6AB02BC7122A0017EA86 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5BDD6AB22BC7129A0017EA86 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		5BDD6AB42BC85ECA0017EA86 /* OnBoardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				5BDD6AB02BC7122A0017EA86 /* OnboardingViewController.swift */,
 				5BDD6AB22BC7129A0017EA86 /* OnboardingViewPresenter.swift */,
+				5BDD6AB42BC85ECA0017EA86 /* OnBoardingPartViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				5BDD6AB12BC7122A0017EA86 /* OnboardingViewController.swift in Sources */,
 				5BC0A0852BBD4F9700413F14 /* AppColor.swift in Sources */,
 				5BC0A0962BC5AB2200413F14 /* ProfileCoordinator.swift in Sources */,
+				5BDD6AB52BC85ECA0017EA86 /* OnBoardingPartViewController.swift in Sources */,
 				5BC0A0942BC5AAFA00413F14 /* ListCoordinator.swift in Sources */,
 				5BC0A0902BC5AA9E00413F14 /* HomeCoordinator.swift in Sources */,
 				5BC0A0982BC5AB7C00413F14 /* TabBarController.swift in Sources */,
