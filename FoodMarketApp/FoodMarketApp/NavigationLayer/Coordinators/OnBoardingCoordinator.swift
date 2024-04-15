@@ -12,20 +12,37 @@ class OnBoardingCoordinator: Coordinator {
 
 private extension OnBoardingCoordinator {
     func showOnboarding(){
-        var pages = [UIViewController]()
+        var pages = [OnBoardingPartViewController]()
+
         
-        let firstVC = UIViewController()
-        firstVC.view.backgroundColor = .purple
+        let firstVC = OnBoardingPartViewController()
+        firstVC.image = UIImage(resource: .chicken1)
+        firstVC.titleText = "Delicious Food"
+        firstVC.descriptionText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        firstVC.buttonText = "Next"
+
+        let secondVC = OnBoardingPartViewController()
+        secondVC.image = UIImage(resource: .shipped2)
+        secondVC.titleText = "Fast Shipping"
+        secondVC.descriptionText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        secondVC.buttonText = "Next"
+
+        let thirdVC = OnBoardingPartViewController()
+        thirdVC.image = UIImage(resource: .medal3)
+        thirdVC.titleText = "Certificate Food"
+        thirdVC.descriptionText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        thirdVC.buttonText = "Next"
         
-        let secondVC = UIViewController()
-        secondVC.view.backgroundColor = .yellow
-        
-        let thirdVC = UIViewController()
-        thirdVC.view.backgroundColor = .green
+        let fourthVC = OnBoardingPartViewController()
+        fourthVC.image = UIImage(resource: .creditCard4)
+        fourthVC.titleText = "Payment Online"
+        fourthVC.descriptionText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        fourthVC.buttonText = "Cool!"
         
         pages.append(firstVC)
         pages.append(secondVC)
         pages.append(thirdVC)
+        pages.append(fourthVC)
 
         let presenter = OnboardingViewPresenter(
             coordinator: self)
