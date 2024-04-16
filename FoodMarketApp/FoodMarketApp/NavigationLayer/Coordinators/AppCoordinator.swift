@@ -1,11 +1,16 @@
 import UIKit
 
 class AppCoordinator: Coordinator {
-    override func start() {
-        showOnBoardingFlow()
-//        showMainFlow()
-    }
     
+    private let userStorage = UserStorage.shared
+
+    override func start() {
+        if userStorage.passedOnboarding {
+            showMainFlow()
+        } else {
+            showOnBoardingFlow()
+        }
+    }
     override func finish() {
         print("appCoordinator finish")
     }

@@ -5,6 +5,8 @@ protocol OnboardingViewOutput: AnyObject {
 }
 
 class OnboardingViewPresenter: OnboardingViewOutput {
+    private let userStorage = UserStorage.shared
+
    //MARK: - Properties
     weak var coordinator: OnBoardingCoordinator!
     
