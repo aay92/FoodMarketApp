@@ -206,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				5BDD6AAF2BC712080017EA86 /* OnBoarding */,
-				5BDD6ABA2BCEFA730017EA86 /* UserSrorage.swift */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -224,6 +223,7 @@
 		5BDD6AB92BCEFA5D0017EA86 /* ServicesLayer */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD6ABA2BCEFA730017EA86 /* UserSrorage.swift */,
 			);
 			path = ServicesLayer;
 			sourceTree = "<group>";

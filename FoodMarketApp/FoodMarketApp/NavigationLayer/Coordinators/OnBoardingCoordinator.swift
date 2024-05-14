@@ -7,6 +7,7 @@ class OnBoardingCoordinator: Coordinator {
     
     override func finish() {
         print("appCoordinator finish")
+        finishDelegate?.coordinatorDidFinish(childCoordinators: self)
     }
 }
 

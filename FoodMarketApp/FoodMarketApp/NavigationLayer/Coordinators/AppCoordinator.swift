@@ -95,8 +95,8 @@ extension AppCoordinator:CoordinatorFinishDelegate {
         case .app:
             return
         case .onboarding:
-            navigationController?.popViewController(
-                animated: false)
+            navigationController?.viewControllers.removeAll()
+            showMainFlow()
         case .home:
             break
         case .order:
