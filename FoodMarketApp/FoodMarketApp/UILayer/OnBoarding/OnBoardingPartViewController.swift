@@ -15,7 +15,7 @@ class OnBoardingPartViewController: UIViewController {
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private let descriptionLabel = UILabel()
-    
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
@@ -65,8 +65,7 @@ private extension OnBoardingPartViewController {
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 23),
             descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 71),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -72)
+            descriptionLabel.widthAnchor.constraint(equalToConstant: view.bounds.width / 1.3)
         ])
     }
 }
